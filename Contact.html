@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/deee762de6.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/deee762de6.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Contact Us</title>
+  <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css>
+  <style>
+    
+  .navy-container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color:teal;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color: #fff;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 14px;
+    background-color: #2c3e50;
+    color: #fff;
+  }
+
+  textarea {
+    resize: vertical;
+    height: 100px;
+  }
+
+  button {
+    padding: 8px 16px;
+    background-color: rgb(26, 89, 198);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #2980b9;
+  }
+
+  .border-animation {
+    position: absolute;
+    width: calc(100% - 8px);
+    height: calc(100% - 8px);
+    border-radius: 5px;
+    border: 8px solid transparent;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: hidden;
+  }
+  </style>
+</head>
+
+<body>
+  <div class="line"></div>
+
+  <!-- Nav Bar starts from here -->
+  <nav class="navbar navbar-expand-lg bnavbar-light bg-light ">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="images/logo.png" alt="logo" ><h8 style="font-family: dancing; font-size: larger; font-weight: bold;">Rain-Water Harvesting </h8></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <!-- Right-aligned navigation links -->
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">HOME</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="Types.html" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        RAIN-WATER HARVESTING
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="knowledge.html">Knowledge</a></li>
+                        <li><a class="dropdown-item" href="techniques.html">Techniques</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Stages.html">STAGES/PRODUCTS OF RWH</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">CONTACT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT US</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+  <div class="navy-container">
+    <h2>Contact Us</h2>
+    <form action="/submit-feedback" method="post">
+      <div class="form-group">
+        <div class="row">
+          <div class="col">
+            <label for="Name"> Name:</label>
+            <input type="text" id="Name" name="Name" placeholder="Enter your first name" required>
+          </div>
+        
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"  placeholder="Enter your email" required>
+      </div>
+      <label for="gender">Gender:</label>
+      <select id="gender" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+
+      <div class="form-group">
+        <label for="feedback">Write Your message Here</label>
+      <textarea id="feedback" name="feedback" rows="4" placeholder="How would you rate this skill?"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </div>
+
+
+
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<br><br><br><br><br>
+<footer class="text-center text-lg-start bg-body-tertiary text-muted "style="background-color: white;" >
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"
+     style=" background: linear-gradient(#00545d, #000729);color: aliceblue;">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Right -->
+        <div>
+            <i class="fa-brands fa-square-instagram fa-xl" style="color: #c73c88; padding-right: 5px;"></i>
+            <i class="fa-brands fa-facebook fa-xl" style="color: #6994e4; padding-right: 5px;" ></i>
+            <i class="fa-brands fa-twitter fa-xl" style="color: #1762ec; padding-right: 5px;"></i>
+        </div>
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class=""  >
+        <div class="container text-center text-md-start mt-5 ">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column 1 -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>Rainwater Harvesting
+                    </h6>
+                    <p class="ftext">
+                       
+"Empowering sustainability one drop at a time –
+Your trusted partner in Rainwater Harvesting solutions for a greener tomorrow."<br><br>
+<br><br>
+<!-- "Rainwater Harvesting is much better than unnecessary water wasting." -->
+                    </p>
+                </div>
+                <!-- Grid column 1 -->
+
+              
+                    <!-- Grid column 2 -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                      <!-- Links -->
+                      <h6 class="text-uppercase fw-bold mb-4">
+                          Products
+                      </h6>
+                      <p>
+                          <a href="#!" class="text-reset"> AquaHarvest</a>
+                      </p>
+                      <p>
+                          <a href="#!" class="text-reset">EcoDrain</a>
+                      </p>
+                      <p>
+                          <a href="#!" class="text-reset">PureRain</a>
+                      </p>
+                      <p>
+                          <a href="#!" class="text-reset">GreenSaver</a>
+                      </p>
+                  </div>
+                  <!-- Grid column 2 -->
+                <!-- Grid column 2 -->
+
+                <!-- Grid column 3 -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful links
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">   GuideHub </a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset"> EcoTip</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">AquaFAQ</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">SustainLink</a>
+                    </p>
+                </div>
+                <!-- Grid column 3 -->
+
+                <!-- Grid column 4 -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 contact">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> KARACHI,SECTOR 11-A, PAKISTAN</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 92 333 000 1112</p>
+                    <p><i class="fas fa-print me-3"></i> + 92 300 454 7864</p>
+                </div>
+                <!-- Grid column 4 -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style=" background: linear-gradient(#00545d, #000729);color: aliceblue;">
+        © 2023 Copyright:
+        <a class="text-reset fw-bold" href="Home.html">Rainwater-Harvesting</a>
+    </div>
+</div>
+    <!-- Copyright -->
+</footer>
+<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7233.068384688586!2d67.0652637!3d24.
+9819581!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb340e584b891c3%3A0x29b2cbc198ba2dbd!2sAptech%20Computer%20
+Education%20North%20Karachi%20Center!5e0!3m2!1sen!2s!4v1703616185516!5m2!1sen!2s"
+ width="100%" height="300px" style="border:0;" allowfullscreen="" loading="lazy" 
+ referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>
+
+</body>
+
+</html>
